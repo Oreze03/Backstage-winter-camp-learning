@@ -1,0 +1,31 @@
+# 一. static  
+## 1. static介绍  
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/34902278/1673590892620-468f17de-786f-4ba7-abd6-76dd28216651.png#averageHue=%23f9f8f3&clientId=u982f01b1-a726-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=280&id=u49058d30&margin=%5Bobject%20Object%5D&name=image.png&originHeight=350&originWidth=632&originalType=binary&ratio=1&rotation=0&showTitle=false&size=79291&status=done&style=none&taskId=uf27cc607-4a99-436d-94cc-80151bd91bc&title=&width=505.6)  
+## 2. 有static和无static修饰的成员变量的区别
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/34902278/1673591130278-9d05a4ea-08e9-48cb-9bdb-4c5b567da07e.png#averageHue=%23f6f5f0&clientId=u982f01b1-a726-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=242&id=mG29f&margin=%5Bobject%20Object%5D&name=image.png&originHeight=303&originWidth=740&originalType=binary&ratio=1&rotation=0&showTitle=false&size=76734&status=done&style=none&taskId=u454a834f-e2b2-4b11-a1db-938a94ea085&title=&width=592)  
+## 3. static修饰成员变量的内存机制  
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/34902278/1673591407005-d2ff8f29-a96d-4589-a9f1-4e9ea9b183a9.png#averageHue=%23f5f3db&clientId=u982f01b1-a726-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=614&id=u525e20b5&margin=%5Bobject%20Object%5D&name=image.png&originHeight=767&originWidth=1612&originalType=binary&ratio=1&rotation=0&showTitle=false&size=552686&status=done&style=none&taskId=u0dc410fd-a651-48d3-9cc3-ab6a11005b2&title=&width=1289.6)  
+## 4.static修饰成员变量的基本方法  
+
+- **成员方法的分类  **
+
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/34902278/1673591694408-4951f3fe-af81-4584-b285-348136b52eb9.png#averageHue=%23f4f3f3&clientId=u982f01b1-a726-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=195&id=u9d907c8a&margin=%5Bobject%20Object%5D&name=image.png&originHeight=244&originWidth=655&originalType=binary&ratio=1&rotation=0&showTitle=false&size=49211&status=done&style=none&taskId=uc932089c-a656-488a-8d33-ecd30441b26&title=&width=524)  
+
+- **static修饰成员方法的内存原理  **
+
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/34902278/1673591807921-27821264-81b8-4061-8acd-e1ae9fc0c14c.png#averageHue=%23f0eed8&clientId=u982f01b1-a726-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=289&id=u6124f086&margin=%5Bobject%20Object%5D&name=image.png&originHeight=361&originWidth=711&originalType=binary&ratio=1&rotation=0&showTitle=false&size=138382&status=done&style=none&taskId=u5cc4fc02-070d-491f-bd6a-3d6e915d315&title=&width=568.8)  
+## 5.static的注意事项  
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/34902278/1673591868380-254fc588-6479-439c-916e-0801554de502.png#averageHue=%23f1f1f1&clientId=u982f01b1-a726-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=126&id=uab83e0d1&margin=%5Bobject%20Object%5D&name=image.png&originHeight=158&originWidth=389&originalType=binary&ratio=1&rotation=0&showTitle=false&size=25634&status=done&style=none&taskId=u21fb749f-e106-4003-97c1-108f0db9074&title=&width=311.2)
+静态方法无法直接访问实例成员指无法通过直接调用成员名来访问实例成员，但是可以通过创建对象来访问该实例成员
+## 6. 工具类  
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/34902278/1673592535669-361095c5-4021-4e35-b208-5f9140795a54.png#averageHue=%23f5f4f3&clientId=u982f01b1-a726-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=259&id=u1bc41914&margin=%5Bobject%20Object%5D&name=image.png&originHeight=324&originWidth=664&originalType=binary&ratio=1&rotation=0&showTitle=false&size=86955&status=done&style=none&taskId=u611d5d50-3a80-4c08-bed8-81b591d4787&title=&width=531.2)  
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/34902278/1673592570513-5705556e-cc15-422d-8912-007865c1993e.png#averageHue=%23f1eeed&clientId=u982f01b1-a726-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=55&id=u594a38e0&margin=%5Bobject%20Object%5D&name=image.png&originHeight=69&originWidth=692&originalType=binary&ratio=1&rotation=0&showTitle=false&size=27276&status=done&style=none&taskId=u313195d9-72e0-446b-84f2-12de489990e&title=&width=553.6)  
+### 7. 代码块  
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/34902278/1673602864050-c3b8c05b-7672-46ac-8d70-abeeb01cb68d.png#averageHue=%23f5f3f3&clientId=u8775c934-a914-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=279&id=ueaa2bcad&margin=%5Bobject%20Object%5D&name=image.png&originHeight=349&originWidth=614&originalType=binary&ratio=1&rotation=0&showTitle=false&size=80161&status=done&style=none&taskId=u08ac5940-afff-4730-975b-1a4b98ffca8&title=&width=491.2)    
+### 8. 单例模式  
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/34902278/1673603006838-4ca06ef1-8ba0-432c-a6cb-bf329b2b9b95.png#averageHue=%23f6f6f6&clientId=u8775c934-a914-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=242&id=ua8f8a3b4&margin=%5Bobject%20Object%5D&name=image.png&originHeight=303&originWidth=725&originalType=binary&ratio=1&rotation=0&showTitle=false&size=51827&status=done&style=none&taskId=ud908bda9-7588-4d8d-acd2-bcd987d31e6&title=&width=580)  
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/34902278/1673603042769-15af615b-fff4-4b58-84f3-2adde364a64d.png#averageHue=%23f0f0f0&clientId=u8775c934-a914-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=86&id=ufc2ca7cb&margin=%5Bobject%20Object%5D&name=image.png&originHeight=108&originWidth=579&originalType=binary&ratio=1&rotation=0&showTitle=false&size=36466&status=done&style=none&taskId=ua1713094-58e7-49dd-b9cb-e9d02cad2c3&title=&width=463.2)  
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/34902278/1673603064067-014556bb-d3ed-4198-8738-16018793999d.png#averageHue=%23f7f6ef&clientId=u8775c934-a914-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=222&id=uedb8a24f&margin=%5Bobject%20Object%5D&name=image.png&originHeight=278&originWidth=762&originalType=binary&ratio=1&rotation=0&showTitle=false&size=75768&status=done&style=none&taskId=u05b2ff46-2a6e-4ea6-8970-bb1c9906935&title=&width=609.6)  
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/34902278/1673603121246-914f9e3f-87d6-4baf-89f0-6548650d9329.png#averageHue=%23f7f6ec&clientId=u8775c934-a914-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=260&id=u0e59c837&margin=%5Bobject%20Object%5D&name=image.png&originHeight=325&originWidth=689&originalType=binary&ratio=1&rotation=0&showTitle=false&size=86099&status=done&style=none&taskId=u48856cfa-aac1-4bce-926a-1405f5f1cb9&title=&width=551.2)  
+
+
